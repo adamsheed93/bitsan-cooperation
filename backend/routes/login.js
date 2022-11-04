@@ -28,6 +28,8 @@ router.post("/", function (req, res) {
               email: user.email,
               country: user.country,
               address: user.address,
+              businessName: user.businessName,
+              privateKey: user.privateKey,
             },
             accessToken,
             refreshToken

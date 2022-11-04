@@ -26,6 +26,7 @@ router.post("/", function (req, res) {
               country: user.country,
               address: user.address,
               privateKey: user.privateKey,
+              businessName: user.businessName,
             },
           });
         } else {
@@ -64,6 +65,7 @@ router.post("/", function (req, res) {
                   address: user.address,
                   // privateKey: decrypt(user.privateKey),
                   privateKey: user.privateKey,
+                  businessName: user.businessName,
                 },
                 accessToken,
                 msg: "new access token was sent",
